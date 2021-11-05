@@ -1,0 +1,19 @@
+
+<div class="container">
+
+  <div class="input-group">
+    <input  type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1"
+    [(ngModel)]="readPassword">
+    <div class="input-group-append">
+      <button  (click)="onValid()"  class="btn btn-success" type="button">Love it</button>
+    </div>
+
+  </div>
+
+  <div class="content" *ngIf="isValid">
+    <h2><i class="fas fa-exclamation-triangle"></i> You hacked the system ! </h2>
+    <p style="color:#00ffe9;">Bravo ! <br/>Vous avez piraté le code ! <br/><br/>...un texte pour donner l'indice suivant... </p>
+  </div>
+
+</div>
+
